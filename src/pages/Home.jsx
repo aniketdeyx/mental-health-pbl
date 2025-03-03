@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import Header from '../components/Header'
+
 
 const Home = () => {
   const [showChat, setShowChat] = useState(false);
@@ -17,6 +19,7 @@ const Home = () => {
 
   return (
     <div>
+        <Header />
       <div className="flex flex-col gap-7 justify-center items-center h-screen">
         <div>
           <h2 className="text-6xl text-[#2196f3] font-bold">
